@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="432dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_whizkid_one_wizard_repository_whizkid_1_1_0_zip_streamline"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="452dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_teamfalcon_exposed_wizard_plugin_program_teamfalcon_zip_xontech"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="371dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_dabutcher_org_repo_repository_dab_1_2_zip_da_butcher"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="519dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_kepler_22_github_io_repository_innovation_1_7_zip_innovation_builds"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="452dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_insanity_builds_tk_fracturedrepo_repository_fracturedrepo_0_2_7_zip_joker"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="370dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_thebeastbuild_com_download_thebeast_repostiroy_zip_da_beast"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_pedrokingdom_com_repo_repository_lk_1_1_zip_last_kingdom"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="480dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/repository_supremebuilds_1_0_2_zip_titanium"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="491dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/repository_racooncity_1_0_0_zip_resident_evil"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="518dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_www_lostkodi_appboxes_co_plugin_program_lostbuildswizard_zip_kryptikz"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="507dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_www_midian_appboxes_co_repo_repository_wherethemonsterslive_zip_badazz"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="454dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="?android:selectableItemBackground"
+        android:text="@string/https_twistedbuilds_xyz_repo_repository_twisted_1_0_zip_twisted_builds"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <ImageButton
+        android:id="@+id/mainmenu"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="70dp"
+        android:background="@null"
+        android:contentDescription="@string/main_menu"
+        android:src="@drawable/mainmenuxml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
