@@ -5,4 +5,4 @@ You can add the repositories to Kodi using "Install from zip file" and navigatin
 
 You should be able to build by adding the kodibuildstv directory to Android Studio as a project.
 
-A work in pprogress. May contain dead links.
+A work in progress. May contain dead links.
