@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="splash_logo">@drawable/firebanner</drawable>
+
+    <drawable name="company_logo">@drawable/firebanner</drawable>
+
+</resources>
