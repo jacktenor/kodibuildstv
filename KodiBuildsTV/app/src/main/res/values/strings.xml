@@ -69,4 +69,10 @@
     <string name="repository_fracturedrepo_0_3_0_zip_joker">repository.fracturedrepo-0.3.0.zip (Joker)</string>
     <string name="repository_racooncity_1_0_2_zip_resident_evil">repository.racooncity-1.0.2.zip (Resident Evil)</string>
     <string name="slamious_repo_zip_slamious">Slamious Repo.zip (Slamious)</string>
+    <string name="https_www_lostkodi_appboxes_co_plugin_program_lostbuildswizard_zip_lostkodi">https://www.lostkodi.appboxes.co/plugin.program.lostbuildswizard.zip(LostKodi)</string>
+    <string name="plugin_program_lostbuildswizard_zip_lostkodi">plugin_program_lostbuildswizard_zip_lostkodi</string>
+    <string name="repository_ghettorepo_0_0_3_zip_gheto">repository.ghettorepo-0.0.3.zip(Gheto)</string>
+    <string name="repository_fracturerepo_0_5_6_zip_joker">repository.fracturerepo-0.5.6.zip (Joker)</string>
+    <string name="repository_gaia_zip_gaia">repository.gaia.zip (Gaia)</string>
+    <string name="repository_supremebuilds_1_0_2_zip_titanium_titanium">repository_supremebuilds_1_0_2_zip_titanium (Titanium)</string>
 </resources>

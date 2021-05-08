@@ -87,9 +87,9 @@ public class MainActivity2 extends MainActivity {
                     });
 
         } else if (id == R.id.button2) {
-            Toast.makeText(MainActivity2.this, "You chose Xontech.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://teamfalcon.exposed/wizard/plugin.program.teamfalcon.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Xontech", "/plugin.program.teamfalcon.zip")
-                    .setTag("DownloadXontech")
+            Toast.makeText(MainActivity2.this, "You chose GhettoRepo.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://famdamnlyman.one/ghetto/ghettorepo/repository.ghettorepo-0.0.3.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/GhettoRepo","/repository.ghettorepo-0.0.3.zip")
+                    .setTag("DownloadGhettoRepo")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -101,11 +101,11 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Xontech is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "GhettoRepo is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Xontech failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "GhettoRepo failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
@@ -157,7 +157,7 @@ public class MainActivity2 extends MainActivity {
 
         } else if (id == R.id.button5) {
             Toast.makeText(MainActivity2.this, "You chose Joker.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://defcon-one.tk/fracturedrepo/repository.fracturedrepo-0.3.0.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Joker", "/repository.fracturedrepo-0.3.0.zip")
+            AndroidNetworking.download("https://defcon-one.tk/fracturedrepo/repository.fracturedrepo-0.5.6.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Joker", "/repository.fracturedrepo-0.5.6.zip")
                     .setTag("DownloadJoker")
                     .setPriority(Priority.MEDIUM)
                     .build()
@@ -202,9 +202,9 @@ public class MainActivity2 extends MainActivity {
                     });
 
         } else if (id == R.id.button7) {
-            Toast.makeText(MainActivity2.this, "You chose Last Kingdom.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://pedrokingdom.com/repo/repository.lk-1.1.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/LastKingdom", "/repository.lk-1.1.zip")
-                    .setTag("DownloadLastKingdom")
+            Toast.makeText(MainActivity2.this, "You chose Gaia.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://repo.gaiakodi.com/repository.gaia.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Gaia", "/repository.gaia.zip")
+                    .setTag("DownloadGaia")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -216,11 +216,11 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Last Kingdom is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Gaia is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Last Kingdom failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Gaia failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 

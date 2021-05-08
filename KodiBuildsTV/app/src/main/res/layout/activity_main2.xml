@@ -20,14 +20,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
         android:id="@+id/button2"
-        android:layout_width="452dp"
+        android:layout_width="422dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/https_teamfalcon_exposed_wizard_plugin_program_teamfalcon_zip_xontech"
+        android:text="@string/repository_ghettorepo_0_0_3_zip_gheto"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
@@ -37,7 +38,7 @@
         android:layout_width="371dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:background="?android:selectableItemBackground"
         android:text="@string/https_dabutcher_org_repo_repository_dab_1_2_zip_da_butcher"
         android:textSize="20sp"
@@ -49,7 +50,7 @@
         android:layout_width="519dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="8dp"
         android:background="?android:selectableItemBackground"
         android:text="@string/https_kepler_22_github_io_repository_innovation_1_7_zip_innovation_builds"
         android:textSize="20sp"
@@ -58,12 +59,12 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="452dp"
-        android:layout_height="35dp"
+        android:layout_width="442dp"
+        android:layout_height="28dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/repository_fracturedrepo_0_3_0_zip_joker"
+        android:text="@string/repository_fracturerepo_0_5_6_zip_joker"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
@@ -82,24 +83,24 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="380dp"
+        android:layout_width="274dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/https_pedrokingdom_com_repo_repository_lk_1_1_zip_last_kingdom"
+        android:text="@string/repository_gaia_zip_gaia"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="480dp"
+        android:layout_width="603dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/repository_supremebuilds_1_0_2_zip_titanium"
+        android:text="@string/repository_supremebuilds_1_0_2_zip_titanium_titanium"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
@@ -163,5 +164,6 @@
         android:src="@drawable/mainmenuxml"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
