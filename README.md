@@ -16,6 +16,10 @@ I'm sure there's a better way but that worked for me.
 
 I know very little about all this so if anyone can improve this please do.
 
+
 ![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/Screenshot_2.png
+
+
 ![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/Screenshot_1.png
+
 
