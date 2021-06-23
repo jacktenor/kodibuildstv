@@ -18,10 +18,10 @@ I know very little about all this so if anyone can improve this please do.
 
 
 
-![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/Screenshot_2.png?raw=true)
+![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/large1.png?raw=true)
 
 
-![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/Screenshot_1.png?raw=true)
+![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/large2.png?raw=true)
 
 
 
