@@ -1,6 +1,7 @@
 # kodibuildstv
 This repo is for personal use. Your welcome to checkout KodiBuildsTV but it is a work in progress 
-by a complete begginer, and may contain dead links and or bugs.                                     
+by a complete begginer, and may contain dead links and or bugs.
+Also there are possible security risks when using third party builds.                                  
 
 KodiBuildsTV is an Android TV app that allows you to download popular Kodi build repositories from a list.                                          
 You can add the repositories to Kodi using "Install from zip file" and navigating to your Download/kodibuildstv directory.                              
