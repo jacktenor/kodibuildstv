@@ -64,9 +64,9 @@ public class MainActivity2 extends MainActivity {
         int id = view.getId();
 
         if (id == R.id.button1) {
-            Toast.makeText(MainActivity2.this, "You chose Streamline.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://whizkid.one/wizard/repository.WhizKid-1.1.0.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/WhizKid", "/repository.WhizKid-1.1.0.zip")
-                    .setTag("DownloadStreamline")
+            Toast.makeText(MainActivity2.this, "You chose Covenant.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://covenant01.github.io/zip/repository.covenant-0.1.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/Covenant", "/repository.covenant-0.1.zip")
+                    .setTag("DownloadCovenant")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -78,18 +78,18 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Streamline is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Covenant is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Streamline failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Covenant failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.button2) {
-            Toast.makeText(MainActivity2.this, "You chose GhettoRepo.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://famdamnlyman.one/ghetto/ghettorepo/repository.ghettorepo-0.0.3.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/GhettoRepo","/repository.ghettorepo-0.0.3.zip")
-                    .setTag("DownloadGhettoRepo")
+            Toast.makeText(MainActivity2.this, "You chose Exodus.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://i-a-c.github.io/repository.exodusredux-0.0.8.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Exodus","/repository.exodusredux-0.0.8.zip")
+                    .setTag("DownloadExodus")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -101,17 +101,17 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "GhettoRepo is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Exodus is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "GhettoRepo failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Exodus failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.button3) {
             Toast.makeText(MainActivity2.this, "You chose DaButcher.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://dabutcher.org/repo/repository.dab-1.2.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/DaButcher", "/repository.dab-1.2.zip")
+            AndroidNetworking.download("https://dabutcher.org/repo/repository.dab-1.5.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/DaButcher", "/repository.dab-1.5.zip")
                     .setTag("DownloadDaButcher")
                     .setPriority(Priority.MEDIUM)
                     .build()
@@ -179,9 +179,9 @@ public class MainActivity2 extends MainActivity {
                     });
 
         } else if (id == R.id.button6) {
-            Toast.makeText(MainActivity2.this, "You chose Slamious.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://slamiousbuilds.com/repo/Slamious%20Repo.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Slamious", "/Slamious Repo.zip")
-                    .setTag("DownloadSlamious")
+            Toast.makeText(MainActivity2.this, "You chose Stream Digital.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://sdwteam.com/wiz/repository.streamdigital-2.0.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Wiz", "/repository.streamdigital-2.0.zip")
+                    .setTag("DownloadSStreamDigital")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -193,17 +193,17 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Slamious is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Stream Digital is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Slamious failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Stream Digital failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.button7) {
             Toast.makeText(MainActivity2.this, "You chose Gaia.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://repo.gaiakodi.com/repository.gaia.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Gaia", "/repository.gaia.zip")
+            AndroidNetworking.download("https://repo.gaiakodi.com/repository.gaia.full.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Gaia", "/repository.gaia.full.zip")
                     .setTag("DownloadGaia")
                     .setPriority(Priority.MEDIUM)
                     .build()
@@ -225,9 +225,9 @@ public class MainActivity2 extends MainActivity {
                     });
 
         } else if (id == R.id.button8) {
-            Toast.makeText(MainActivity2.this, "You chose Titanium.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://www.supremebuilds.com/repo/repository.supremebuilds-1.0.2.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Titanium", "/repository.supremebuilds-1.0.2.zip")
-                    .setTag("DownloadTitanium")
+            Toast.makeText(MainActivity2.this, "You chose Estuary Switch.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://zaxxon709.github.io/repo/repository.709-1.0-Nexus.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/EstuarySwitch", "/repository.709-1.0-Nexus.zip")
+                    .setTag("DownloadEstuarySwitch")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -239,18 +239,18 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Titanium is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Estuary Switch is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Titanium failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Estuary Switch failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.button9) {
-            Toast.makeText(MainActivity2.this, "You chose Resident Evil.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://racooncity.gq/repo/repository.racooncity-1.0.2.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/ResidentEvil", "/repository.racooncity-1.0.2.zip")
-                    .setTag("DownloadResidentEvil")
+            Toast.makeText(MainActivity2.this, "You chose Grindhouse.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://grindhousekodi.us/repo/repository.grindhousekodi-1.8.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Grindhouse", "/grindhousekodi-1.8.zip")
+                    .setTag("DownloadGrindhouse")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -262,11 +262,11 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Resident Evil is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Grindhouse is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Resident Evil failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Grindhouse failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
@@ -317,9 +317,9 @@ public class MainActivity2 extends MainActivity {
                     });
 
         } else if (id == R.id.button12) {
-            Toast.makeText(MainActivity2.this, "You chose Twisted Builds.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://twistedbuilds.xyz/repo/repository.twisted-1.0.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Twisted", "/repository.twisted-1.0.zip")
-                    .setTag("DownloadTwisted")
+            Toast.makeText(MainActivity2.this, "You chose Diggz", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://diggz1.me/diggzrepo/Diggz_Repo.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Diggz", "/Diggz_Repo.zip")
+                    .setTag("DownloadDiggz")
                     .setPriority(Priority.MEDIUM)
                     .build()
                     .setDownloadProgressListener(new DownloadProgressListener() {
@@ -331,11 +331,11 @@ public class MainActivity2 extends MainActivity {
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity2.this, "Twisted Builds is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Diggz is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity2.this, "Twisted Builds failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity2.this, "Diggz failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
         }

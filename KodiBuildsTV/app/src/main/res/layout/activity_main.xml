@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintlayout"
@@ -33,7 +34,7 @@
         android:background="@null"
         android:contentDescription="@string/crew"
         android:padding="20dp"
-        android:src="@drawable/crewxml"
+        android:src="@drawable/thecrewxml"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,15 +52,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/xanax"
+        android:id="@+id/magneticrepo"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="190dp"
         android:background="@null"
-        android:contentDescription="@string/xanax"
+        android:contentDescription="@string/magneticrepo"
         android:padding="20dp"
-        android:src="@drawable/xanaxxml"
+        android:src="@drawable/magneticrepoxml"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,25 +92,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/cellar"
+        android:id="@+id/cman"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="370dp"
         android:background="@null"
-        android:contentDescription="@string/cellar"
         android:padding="20dp"
-        android:src="@drawable/cellarxml"
+        android:src="@drawable/cmanxml"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
 
     <Button
         android:id="@+id/kodi64"
         android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         android:layout_marginStart="565dp"
         android:layout_marginTop="420dp"
-        android:background="?android:attr/selectableItemBackground"
         android:text="@string/download_kodi_arm64_v8a"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -120,10 +120,10 @@
         android:layout_height="30dp"
         android:layout_marginStart="565dp"
         android:layout_marginTop="455dp"
-        android:background="?android:selectableItemBackground"
         android:text="@string/download_kodi_armeabi_v7a"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/readme"
@@ -146,7 +146,7 @@
         android:contentDescription="@string/builds"
         android:src="@drawable/menu2xml"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cellar" />
+        app:layout_constraintTop_toBottomOf="@+id/cman" />
 
     <ProgressBar
         android:id="@+id/bar"

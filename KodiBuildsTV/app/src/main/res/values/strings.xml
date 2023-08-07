@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">KodiBuildsTV</string>
-    <string name="xanax">xanax</string>
     <string name="ezzer">ezzer</string>
-    <string name="cellar">cellar</string>
     <string name="crew">crew</string>
     <string name="doomzday">doomzday</string>
     <string name="nolimits">nolimits</string>
+    <string name="cman">cman</string>
     <string name="download_kodi_arm64_v8a">Download Kodi Arm64-v8a</string>
     <string name="download_kodi_armeabi_v7a">Download Kodi Armeabi-v7a</string>
     <string name="read_me">Read Me</string>
@@ -41,21 +40,11 @@
     <string name="grid_view">Grid View</string>
     <string name="error_fragment">Error Fragment</string>
     <string name="personal_settings">Personal Settings</string>
-    <string name="watch_trailer_1">Watch trailer</string>
-    <string name="watch_trailer_2">FREE</string>
-    <string name="rent_1">Rent By Day</string>
-    <string name="rent_2">From $1.99</string>
-    <string name="buy_1">Buy and Own</string>
-    <string name="buy_2">AT $9.99</string>
-    <string name="movie">Movie</string>
-
-    <!-- Error messages -->
     <string name="error_fragment_message">An error occurred</string>
     <string name="dismiss_error">Dismiss</string>
     <string name="menu3">menu3</string>
     <string name="repository_misfitmods_zip_misfitmods">repository.misfitmods.zip (MisFitMods)</string>
     <string name="repository_grindhousekodi_1_7_zip_grindhouse">repository.grindhousekodi-1.7.zip (Grindhouse)</string>
-    <string name="repository_diggz_4_0_zip_diggz_xenon">repository.diggz-4.0.zip (Diggz Xenon)</string>
     <string name="repository_racooncity_1_0_0_zip_planetarium">repository.racooncity-1.0.0.zip (Planetarium)</string>
     <string name="plugin_program_sdwiz_zip_bk_nox">plugin.program.sdwiz.zip (Bk Nox)</string>
     <string name="plugin_program_lostbuildswizard_zip_mach_lite">plugin.program.lostbuildswizard.zip (Mach Lite)</string>
@@ -74,5 +63,18 @@
     <string name="repository_ghettorepo_0_0_3_zip_gheto">repository.ghettorepo-0.0.3.zip(Gheto)</string>
     <string name="repository_fracturerepo_0_5_6_zip_joker">repository.fracturerepo-0.5.6.zip (Joker)</string>
     <string name="repository_gaia_zip_gaia">repository.gaia.zip (Gaia)</string>
-    <string name="repository_supremebuilds_1_0_2_zip_titanium_titanium">repository_supremebuilds_1_0_2_zip_titanium (Titanium)</string>
+    <string name="repository_supremebuilds_1_0_2_zip_titanium_titanium">repository_supremebuilds_!_0_2_zip_titanium (Titanium)</string>
+    <string name="magneticrepo">magneticrepo</string>
+    <string name="cmanxml">cmanxml</string>
+    <string name="todo">cman</string>
+    <string name="diggz_repo_zip_diggz">Diggz_Repo.zip (Diggz)</string>
+    <string name="repository_grindhousekodi_1_8_zip_grindhouse">repository.grindhousekodi-1.8.zip (Grindhouse)</string>
+    <string name="repository_709_1_0_nexus_zip_estuary_switch">repository.709-1.0-Nexus.zip (Estuary Switch)</string>
+    <string name="repository_gaia_full_zip_gaia">repository.gaia.full.zip (Gaia)</string>
+    <string name="https_dabutcher_org_repo_repository_dab_1_5_zip_dabutcher">https://dabutcher.org/repo/repository.dab-1.5.zip (DaButcher)</string>
+    <string name="repository_dab_1_5_zip_dabutcher">repository.dab-1.5.zip (DaButcher)</string>
+    <string name="repository_streamdigital_2_0_zip_stream_digital">repository.streamdigital-2.0.zip (Stream Digital)</string>
+    <string name="repository_exodusredux_0_0_8_zip_exodus">repository.exodusredux-0.0.8.zip (Exodus)</string>
+    <string name="repository_covenant_0_1_zip_covenant">repository.covenant-0.1.zip (Covenant)</string>
+
 </resources>

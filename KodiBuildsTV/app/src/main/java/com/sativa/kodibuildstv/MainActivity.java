@@ -12,13 +12,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.DownloadListener;
-import com.androidnetworking.interfaces.DownloadProgressListener;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -29,10 +30,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         ImageButton thecrew = findViewById(R.id.thecrew);
         ImageButton doomzday = findViewById(R.id.doomzday);
-        ImageButton xanax = findViewById(R.id.xanax);
+        ImageButton magneticrepo = findViewById(R.id.magneticrepo);
         ImageButton ezzer = findViewById(R.id.ezzer);
         ImageButton nolimits = findViewById(R.id.nolimits);
-        ImageButton cellar = findViewById(R.id.cellar);
+        ImageButton cman = findViewById(R.id.cman);
         Button kodi64 = findViewById(R.id.kodi64);
         Button kodi32 = findViewById(R.id.kodi32);
 
@@ -41,10 +42,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         thecrew.setOnClickListener(this);
         doomzday.setOnClickListener(this);
-        xanax.setOnClickListener(this);
+        magneticrepo.setOnClickListener(this);
         ezzer.setOnClickListener(this);
+        cman.setOnClickListener(this);
         nolimits.setOnClickListener(this);
-        cellar.setOnClickListener(this);
         kodi64.setOnClickListener(this);
         kodi32.setOnClickListener(this);
 
@@ -63,14 +64,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         readme.setBackgroundColor(Color.TRANSPARENT);
 
-        menu2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(i);
-            }
-
+        menu2.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(i);
         });
     }
 
@@ -85,11 +81,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 .setTag("DownloadTheCrew")
                 .setPriority(Priority.MEDIUM)
                 .build()
-                .setDownloadProgressListener(new DownloadProgressListener() {
-                    @Override
-                    public void onProgress(long bytesDownloaded, long totalBytes) {
-                        // do anything with progress
-                    }
+                .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                    // do anything with progress
                 })
                 .startDownload(new DownloadListener() {
                     @Override
@@ -104,15 +97,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         } else if (id == R.id.doomzday) {
             Toast.makeText(MainActivity.this, "You chose Doomzday.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://doomzdayteam.github.io/doomzday/repository.doomzday-1.0.7.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Doomzday", "/repository.doomzday-1.0.7.zip")
+            AndroidNetworking.download("https://doomzdayteam.github.io/doomzday/repository.doomzday-1.1.0.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Doomzday", "/repository.doomzday-1.1.0.zip")
                     .setTag("DownloadDoomzday")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
@@ -125,40 +115,34 @@ public class MainActivity extends Activity implements View.OnClickListener {
                         }
                     });
 
-        } else if (id == R.id.xanax) {
-            Toast.makeText(MainActivity.this, "You chose Xanax Builds.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://xanaxrepo.com/repo/xanax-repo.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/Xanax", "/xanax-repo.zip")
-                    .setTag("DownloadXanax")
+        } else if (id == R.id.magneticrepo) {
+            Toast.makeText(MainActivity.this, "You chose Magnetic Builds.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://magnetic.website/repo/repository.Magnetic-1.1.0b.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/Magnetic", "/repository.Magnetic-1.1.0b.zip")
+                    .setTag("DownloadMagnetic")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity.this, "Xanax Builds is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Magnetic Builds is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity.this, "Xanax Builds failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Magnetic Builds failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.ezzer) {
             Toast.makeText(MainActivity.this, "You chose Ezzer Macs Wizard.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://ezzer-mac.com/repo/repository.EzzerMacsWizard.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/EzzerMacs", "/repository.EzzerMacsWizard.zip")
+            AndroidNetworking.download("https://ezzer-mac.com/repo/repository.EzzerMacsWizard-1.1.6.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/EzzerMacs", "/repository.EzzerMacsWizard-1.1.6.zip")
                     .setTag("DownloadEzzer")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
@@ -177,11 +161,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     .setTag("DownloadNoLimits")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
@@ -194,72 +175,64 @@ public class MainActivity extends Activity implements View.OnClickListener {
                         }
                     });
 
-        } else if (id == R.id.cellar) {
-            Toast.makeText(MainActivity.this, "You chose Cellar Door.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://cellardoortv.com/repo/repository.cdrepo-11.0.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/CellarDoor", "/repository.cdrepo-10.4.zip")
-                    .setTag("DownloadCellar")
+        } else if (id == R.id.cman) {
+            Toast.makeText(MainActivity.this, "You chose CmAn.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://cmanbuilds.com/repo/repository.cMaNWizard-2.1.zip", Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/CmAn", "/repository.cMaNWizard-2.1.zip")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity.this, "Cellar Door is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "CmAn is complete.", Toast.LENGTH_SHORT).show();
                         }
+
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity.this, "Cellar Door failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "CmAn failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.kodi64) {
-            Toast.makeText(MainActivity.this, "You chose kodi-18.9-Leia-arm64-v8a.apk.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://mirrors.kodi.tv/releases/android/arm64-v8a/kodi-18.9-Leia-arm64-v8a.apk",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Kodiapks", "/kodi-18.9-Leia-arm64-v8a.apk")
-                    .setTag("DownloadCellar")
+            Toast.makeText(MainActivity.this, "You chose kodi-20.2-Nexus-arm64-v8a.apk (Android 64)`.", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://mirrors.kodi.tv/releases/android/arm64-v8a/kodi-20.2-Nexus-arm64-v8a.apk?https=1", Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/Kodiapks", "/kodi-20.2-Nexus-arm64-v8a.apk")
+                    .setTag("DownloadKodi20-2")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity.this, "kodi-18.9-Leia-arm64-v8a.apk is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "kodi-20.2-Nexus-arm64-v8a.apk is complete.", Toast.LENGTH_SHORT).show();
                         }
+
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity.this, "kodi-18.9-Leia-arm64-v8a.apk failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "kodi-20.2-Nexus-arm64-v8a.apk failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
 
         } else if (id == R.id.kodi32) {
-            Toast.makeText(MainActivity.this, "You chose kodi-18.9-Leia-armeabi-v7a.apk.", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://mirrors.kodi.tv/releases/android/arm/kodi-18.9-Leia-armeabi-v7a.apk",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Kodiapks", "/kodi-18.9-Leia-armeabi-v7a.apk")
-                    .setTag("DownloadCellar")
+            Toast.makeText(MainActivity.this, "You chose kodi-20.2-Nexus-armeabi-v7a.apk (Android 32).", Toast.LENGTH_SHORT).show();
+            AndroidNetworking.download("https://mirrors.kodi.tv/releases/android/arm/kodi-20.2-Nexus-armeabi-v7a.apk?https=1",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Kodiapks", "/kodi-20.2-Nexus-armeabi-v7a.apk")
+                    .setTag("DownloadKodi32")
                     .setPriority(Priority.MEDIUM)
                     .build()
-                    .setDownloadProgressListener(new DownloadProgressListener() {
-                        @Override
-                        public void onProgress(long bytesDownloaded, long totalBytes) {
-                            // do anything with progress
-                        }
+                    .setDownloadProgressListener((bytesDownloaded, totalBytes) -> {
+                        // do anything with progress
                     })
                     .startDownload(new DownloadListener() {
                         @Override
                         public void onDownloadComplete() {
-                            Toast.makeText(MainActivity.this, "kodi-18.9-Leia-armeabi-v7a.apk is complete.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "kodi-20.2-Nexus-armeabi-v7a.apk is complete.", Toast.LENGTH_SHORT).show();
                         }
                         @Override
                         public void onError(ANError error) {
-                            Toast.makeText(MainActivity.this, "kodi-18.9-Leia-armeabi-v7a.apk failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "kodi-20.2-Nexus-armeabi-v7a.apk failed.", Toast.LENGTH_SHORT).show();
                         }
                     });
         }

@@ -10,12 +10,12 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="432dp"
+        android:layout_width="424dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="35dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/https_whizkid_one_wizard_repository_whizkid_1_1_0_zip_streamline"
+        android:text="@string/repository_covenant_0_1_zip_covenant"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,12 +23,12 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="422dp"
+        android:layout_width="447dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/repository_ghettorepo_0_0_3_zip_gheto"
+        android:text="@string/repository_exodusredux_0_0_8_zip_exodus"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button1" />
@@ -40,17 +40,17 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="8dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/https_dabutcher_org_repo_repository_dab_1_2_zip_da_butcher"
+        android:text="@string/repository_dab_1_5_zip_dabutcher"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="519dp"
+        android:layout_width="527dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
         android:text="@string/https_kepler_22_github_io_repository_innovation_1_7_zip_innovation_builds"
         android:textSize="20sp"
@@ -60,7 +60,7 @@
     <Button
         android:id="@+id/button5"
         android:layout_width="442dp"
-        android:layout_height="28dp"
+        android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
@@ -71,48 +71,48 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="310dp"
+        android:layout_width="525dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/slamious_repo_zip_slamious"
+        android:text="@string/repository_streamdigital_2_0_zip_stream_digital"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="274dp"
+        android:layout_width="328dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/repository_gaia_zip_gaia"
+        android:text="@string/repository_gaia_full_zip_gaia"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="603dp"
+        android:layout_width="482dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/repository_supremebuilds_1_0_2_zip_titanium_titanium"
+        android:text="@string/repository_709_1_0_nexus_zip_estuary_switch"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="492dp"
+        android:layout_width="510dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/repository_racooncity_1_0_2_zip_resident_evil"
+        android:text="@string/repository_grindhousekodi_1_8_zip_grindhouse"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button8" />
@@ -131,7 +131,7 @@
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="507dp"
+        android:layout_width="510dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
@@ -143,12 +143,12 @@
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="454dp"
+        android:layout_width="237dp"
         android:layout_height="35dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:background="?android:selectableItemBackground"
-        android:text="@string/https_twistedbuilds_xyz_repo_repository_twisted_1_0_zip_twisted_builds"
+        android:text="@string/diggz_repo_zip_diggz"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button11" />
