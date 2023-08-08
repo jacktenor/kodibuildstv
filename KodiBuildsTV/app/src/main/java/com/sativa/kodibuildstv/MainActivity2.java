@@ -318,7 +318,7 @@ public class MainActivity2 extends MainActivity {
 
         } else if (id == R.id.button12) {
             Toast.makeText(MainActivity2.this, "You chose Diggz", Toast.LENGTH_SHORT).show();
-            AndroidNetworking.download("https://diggz1.me/diggzrepo/Diggz_Repo.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() +"/KodiBuildsTV/Diggz", "/Diggz_Repo.zip")
+            AndroidNetworking.download("https://diggz1.me/diggzrepo/Diggz_Repo.zip",Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath() + "/KodiBuildsTV/Diggz", "/Diggz_Repo.zip")
                     .setTag("DownloadDiggz")
                     .setPriority(Priority.MEDIUM)
                     .build()
@@ -341,7 +341,6 @@ public class MainActivity2 extends MainActivity {
         }
     }
 }
-
 
 
 
