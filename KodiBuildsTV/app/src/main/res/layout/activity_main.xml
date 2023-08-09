@@ -106,10 +106,10 @@
 
     <Button
         android:id="@+id/kodi64"
-        android:layout_width="265dp"
+        android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_marginStart="545dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginStart="560dp"
+        android:layout_marginTop="409dp"
         android:background="@android:color/transparent"
         android:text="@string/download_kodi_arm64_v8a"
         app:layout_constraintStart_toStartOf="parent"
@@ -117,10 +117,10 @@
 
     <Button
         android:id="@+id/kodi32"
-        android:layout_width="265dp"
+        android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_marginStart="545dp"
-        android:layout_marginTop="455dp"
+        android:layout_marginStart="560dp"
+        android:layout_marginTop="465dp"
         android:background="@android:color/transparent"
         android:text="@string/download_kodi_armeabi_v7a"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,10 +129,10 @@
 
     <ImageButton
         android:id="@+id/readme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="436dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="473dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="448dp"
+        android:layout_marginTop="68dp"
         android:contentDescription="@string/image"
         android:src="@drawable/readmexml"
         app:layout_constraintStart_toStartOf="parent"
