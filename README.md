@@ -17,8 +17,7 @@ I'm sure there's a better way but that worked for me.
 
 I know very little about all this so if anyone can improve this please do.
 
-![Screenshot](large1.png)
-![Screenshot](large2.png)
+
 ![alt text](https://github.com/jacktenor/kodibuildstv/blob/master/large1.png?raw=true)
 
 
